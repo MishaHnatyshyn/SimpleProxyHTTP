@@ -21,7 +21,7 @@ class ProxyServer {
     const { method, url, headers } = req;
     const options = {
       method: method,
-      url: url[0] === '/' && url.length > 1 ? url.replace('/', ''): url,
+      url: url.length > 1 && url[0] === '/' ? url.replace('/', '') : url,
       headers: headers
     };
     const proxyRequestStream = this.request(req, res, options);
