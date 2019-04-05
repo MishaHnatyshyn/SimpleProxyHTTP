@@ -1,0 +1,17 @@
+{
+  "name": "Proxy Server KPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "query-string": "6.4.0",
+    "request": "2.88.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MishaHnatyshyn",
+  "license": "MIT"
+}
