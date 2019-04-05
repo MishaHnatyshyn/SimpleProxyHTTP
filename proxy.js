@@ -1,3 +1,5 @@
+'use strict';
+
 const http = require('http');
 const request = require('request');
 
@@ -5,6 +7,7 @@ class ProxyServer {
   constructor(){
     this.handler = this.handler.bind(this);
     this.request = this.request.bind(this);
+    this.run = this.run.bind(this);
   }
 
   run(port){
